@@ -191,64 +191,33 @@
         <div class="container">
             <div class="contact-content">
                 <div class="contact-info" data-aos="fade-right">
-                    <h2>Contacto</h2>
-                    <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
-                    <div class="social-links">
-                        <a href="#"><i class="ri-mail-line"></i></a>
-                        <a href="#"><i class="ri-whatsapp-line"></i></a>
-                        <a href="#"><i class="ri-telegram-line"></i></a>
-                        <a href="#"><i class="ri-github-line"></i></a>
-                        <a href="#"><i class="ri-linkedin-line"></i></a>
+                    <h2>¡Hablemos!</h2>
+                    <p>¿Tienes un proyecto en mente o simplemente quieres conectar? Estoy siempre interesado en escuchar nuevas ideas y explorar oportunidades de colaboración.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="ri-mail-line"></i>
+                            <span>¿Listo para comenzar un proyecto?</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ri-time-line"></i>
+                            <span>Respuesta en menos de 24 horas</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ri-group-line"></i>
+                            <span>Colaboremos juntos</span>
+                        </div>
                     </div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSelFG4_LYzzesujR33CkL1Db1GBAWilSUtk8KOlMZgPDnPrBQ/viewform?usp=preview" class="contact-button" target="_blank">
+                        <span>Contáctame</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
                 </div>
-                <form class="contact-form" data-aos="fade-left">
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea rows="5" placeholder="Mensaje" required></textarea>
-                    <button type="submit">Enviar Mensaje</button>
-                </form>
             </div>
         </div>
     </section>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        // Inicializar AOS
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-
-        // Smooth scroll para los links del navbar
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Cambiar estilo del navbar al hacer scroll
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(15, 23, 42, 0.9)';
-                navbar.style.backdropFilter = 'blur(10px)';
-            } else {
-                navbar.style.background = 'var(--bg-color)';
-                navbar.style.backdropFilter = 'none';
-            }
-        });
-
-        // Manejar el envío del formulario
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Aquí puedes agregar la lógica para manejar el envío del formulario
-            alert('¡Gracias por tu mensaje! Te contactaré pronto.');
-            this.reset();
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
