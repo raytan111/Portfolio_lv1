@@ -49,9 +49,9 @@ section {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: #fff;
+    background: rgba(15, 23, 42, 0.9);
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     z-index: 1000;
     padding: 1rem 0;
 }
@@ -71,6 +71,20 @@ section {
     color: var(--primary-color);
     text-decoration: none;
 }
+.logo2 {
+    background-color: #fff;
+    color: var(--bg-color);
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    cursor: pointer;
+}
+
 
 .nav-links {
     display: flex;
@@ -398,7 +412,7 @@ section {
         width: 100%;
         display: none;
         justify-content: space-around;
-        background: white;
+        background: rgba(15, 23, 42, 0.9);
         backdrop-filter: blur(10px);
         padding: 1rem;
         box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
@@ -414,7 +428,7 @@ section {
     .menu-toggle {
         display: block;
     }
-
+    
     .nav-links a {
         font-size: 0.9rem;
     }
